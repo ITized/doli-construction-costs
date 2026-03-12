@@ -1,0 +1,36 @@
+{
+	"name": "itized/doli-construction-costs",
+	"description": "Dolibarr module for French construction sector pricing, BOMs, products and services management",
+	"type": "dolibarr-module",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "ITized",
+			"homepage": "https://github.com/ITized"
+		}
+	],
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9.6",
+		"php-parallel-lint/php-parallel-lint": "^1.3"
+	},
+	"autoload": {
+		"classmap": [
+			"htdocs/constructioncosts/class/",
+			"htdocs/constructioncosts/core/"
+		]
+	},
+	"scripts": {
+		"lint": "parallel-lint --exclude vendor htdocs/",
+		"test": "phpunit --configuration phpunit.xml",
+		"check": [
+			"@lint",
+			"@test"
+		]
+	},
+	"config": {
+		"sort-packages": true
+	}
+}

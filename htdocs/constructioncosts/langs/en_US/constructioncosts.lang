@@ -1,0 +1,140 @@
+# ConstructionCosts module - English language file
+
+#
+# Generic
+#
+ModuleConstructionCostsName = Construction Costs
+ModuleConstructionCostsDesc = Comprehensive management of construction products, services and BOMs with configurable pricing
+
+#
+# Module description
+#
+ConstructionCostsDescription = Construction sector pricing and BOM management
+ConstructionCostsDescriptionLong = A comprehensive module for managing construction products, services and Bills of Materials (BOMs) with configurable pricing rules, margin management, multi-supplier support and CSV import/export capabilities.
+
+#
+# Admin page
+#
+ConstructionCostsSetup = Construction Costs Setup
+ConstructionCostsSetupPage = Configure the Construction Costs module settings below. These values serve as defaults for pricing calculations throughout the module.
+ConstructionCostsAboutDescription = A Dolibarr module for the French construction sector providing comprehensive pricing, BOM management, and supplier integration.
+
+#
+# Pricing Section
+#
+PricingSection = Pricing Configuration
+CONSTRUCTIONCOSTS_MO_HOURLY_RATE = MO Hourly Rate (Main d'Oeuvre)
+CONSTRUCTIONCOSTS_MO_HOURLY_RATETooltip = Default hourly rate for labor (Main d'Oeuvre) in EUR. Used when no specific rate is defined on a pricing rule.
+MOHourlyRateHelp = Default labor hourly rate applied to service pricing. Can be overridden per pricing rule.
+CONSTRUCTIONCOSTS_DEFAULT_MARGIN_PERCENT = Default Margin (%)
+CONSTRUCTIONCOSTS_DEFAULT_MARGIN_PERCENTTooltip = Default margin percentage applied to all pricing calculations
+DefaultMarginPercentHelp = The default margin percentage added on top of cost price to determine selling price.
+CONSTRUCTIONCOSTS_SERVICE_BASE_MULTIPLIER = Service Base Multiplier
+CONSTRUCTIONCOSTS_SERVICE_BASE_MULTIPLIERTooltip = Base multiplier applied to service pricing calculations
+ServiceBaseMultiplierHelp = A multiplier applied to all service prices. Use 1.0 for no modification. Values > 1.0 increase prices, < 1.0 decrease.
+CONSTRUCTIONCOSTS_DEFAULT_VAT_RATE = Default VAT Rate (%)
+CONSTRUCTIONCOSTS_DEFAULT_VAT_RATETooltip = Default VAT (TVA) rate for construction products and services
+DefaultVATRateHelp = The default VAT rate. Standard French rate is 20%%. Reduced rates: 10%% (renovation), 5.5%% (energy improvements).
+CONSTRUCTIONCOSTS_DEFAULT_CURRENCY = Default Currency
+CONSTRUCTIONCOSTS_DEFAULT_CURRENCYTooltip = Default currency for all pricing data
+
+#
+# Import/Export Section
+#
+ImportExportSection = Import / Export Configuration
+CONSTRUCTIONCOSTS_CSV_SEPARATOR = CSV Separator
+CONSTRUCTIONCOSTS_CSV_SEPARATORTooltip = Field separator character used in CSV import/export files
+Semicolon = Semicolon
+Comma = Comma
+Tab = Tab
+Pipe = Pipe
+
+#
+# Supplier Integration Section
+#
+SupplierIntegrationSection = Supplier Integration
+CONSTRUCTIONCOSTS_ENABLE_SUPPLIER_SYNC = Enable Supplier Price Sync
+CONSTRUCTIONCOSTS_ENABLE_SUPPLIER_SYNCTooltip = Enable automatic synchronization of prices from configured suppliers
+
+#
+# Menu entries
+#
+PricingRules = Pricing Rules
+SupplierConfigs = Supplier Configurations
+ImportData = Import Data
+ViewConstructionCosts = View Construction Costs
+
+#
+# Pricing rule types
+#
+PricingRuleTypeProduct = Product
+PricingRuleTypeService = Service
+PricingRuleTypeMixed = Mixed (Product + Service)
+
+#
+# Construction categories
+#
+ConstructionCategory = Construction Category
+ConstructionUnit = Construction Unit
+ConstructionCategoryCodeHelp = Unique code for the construction category
+ConstructionCategoryLabelHelp = Display name of the construction category
+ConstructionUnitCodeHelp = Unique code for the measurement unit
+ConstructionUnitLabelHelp = Display name of the measurement unit
+
+#
+# Dashboard / Index
+#
+ConstructionCostsArea = Construction Costs Dashboard
+ConstructionCostsDashboard = Dashboard
+PricingRulesOverview = Pricing Rules Overview
+RecentPricingRules = Recent Pricing Rules
+QuickActions = Quick Actions
+NoPricingRulesYet = No pricing rules defined yet. Start by importing data or creating rules manually.
+
+#
+# Price breakdown
+#
+MaterialCost = Material Cost
+LaborCost = Labor Cost (MO)
+Subtotal = Subtotal
+MarginPercent = Margin (%%)
+MarginAmount = Margin Amount
+PriceHT = Price HT
+VATRate = VAT Rate (%%)
+VATAmount = VAT Amount
+PriceTTC = Price TTC
+
+#
+# Import
+#
+ImportCSVTitle = Import Construction Data from CSV
+ImportCSVDescription = Upload a CSV file containing construction products and services data. The file should follow the standard template format.
+DownloadCSVTemplate = Download CSV Template
+ImportResults = Import Results
+ImportTotalRows = Total rows processed
+ImportCreated = Products/Services created
+ImportUpdated = Products/Services updated
+ImportSkipped = Rows skipped
+ImportErrors = Errors
+
+#
+# Supplier
+#
+SyncSupplierPrices = Synchronize Supplier Prices
+SupplierName = Supplier Name
+SupplierType = Integration Type
+SupplierTypeCSV = CSV Import
+SupplierTypeAPI = API Integration
+MatchField = Product Match Field
+MatchFieldEAN = EAN / Barcode
+MatchFieldRef = Product Reference
+LastSyncDate = Last Synchronization
+
+#
+# Errors / Messages
+#
+ErrorInvalidRuleType = Invalid pricing rule type
+ErrorNegativePrice = Price cannot be negative
+ErrorRequiredField = Field %s is required
+SuccessRuleCreated = Pricing rule created successfully
+SuccessDataImported = Data imported successfully
