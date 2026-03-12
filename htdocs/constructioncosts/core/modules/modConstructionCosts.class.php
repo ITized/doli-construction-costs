@@ -97,6 +97,7 @@ class modConstructionCosts extends DolibarrModules
 					'servicecard',
 					'bomcard',
 					'propalcard',
+					'invoicecard',
 				),
 			),
 			'moduleforexternal' => 0,
@@ -260,6 +261,30 @@ class modConstructionCosts extends DolibarrModules
 		$this->rights[$r][4] = 'import';
 		$this->rights[$r][5] = 'execute';
 		$r++;
+
+		$o = 4;
+		$this->rights[$r][0] = $this->numero . sprintf("%02d", ($o * 10) + 1);
+		$this->rights[$r][1] = 'Read work templates';
+		$this->rights[$r][4] = 'worktemplate';
+		$this->rights[$r][5] = 'read';
+		$r++;
+		$this->rights[$r][0] = $this->numero . sprintf("%02d", ($o * 10) + 2);
+		$this->rights[$r][1] = 'Create/Update work templates';
+		$this->rights[$r][4] = 'worktemplate';
+		$this->rights[$r][5] = 'write';
+		$r++;
+		$this->rights[$r][0] = $this->numero . sprintf("%02d", ($o * 10) + 3);
+		$this->rights[$r][1] = 'Delete work templates';
+		$this->rights[$r][4] = 'worktemplate';
+		$this->rights[$r][5] = 'delete';
+		$r++;
+
+		$o = 5;
+		$this->rights[$r][0] = $this->numero . sprintf("%02d", ($o * 10) + 1);
+		$this->rights[$r][1] = 'Convert offers to invoices';
+		$this->rights[$r][4] = 'offerconvert';
+		$this->rights[$r][5] = 'execute';
+		$r++;
 		/* END MODULEBUILDER PERMISSIONS */
 
 
@@ -330,6 +355,54 @@ class modConstructionCosts extends DolibarrModules
 			'position' => 1000 + $r,
 			'enabled' => "isModEnabled('constructioncosts')",
 			'perms' => '$user->hasRight("constructioncosts", "import", "execute")',
+			'target' => '',
+			'user' => 2,
+		);
+
+		$this->menu[$r++] = array(
+			'fk_menu' => 'fk_mainmenu=constructioncosts',
+			'type' => 'left',
+			'titre' => 'WorkTemplates',
+			'prefix' => img_picto('', 'list', 'class="pictofixedwidth valignmiddle paddingright"'),
+			'mainmenu' => 'constructioncosts',
+			'leftmenu' => 'worktemplate',
+			'url' => '/constructioncosts/constructioncostsindex.php?mode=worktemplates',
+			'langs' => 'constructioncosts@constructioncosts',
+			'position' => 1000 + $r,
+			'enabled' => "isModEnabled('constructioncosts')",
+			'perms' => '$user->hasRight("constructioncosts", "worktemplate", "read")',
+			'target' => '',
+			'user' => 2,
+		);
+
+		$this->menu[$r++] = array(
+			'fk_menu' => 'fk_mainmenu=constructioncosts',
+			'type' => 'left',
+			'titre' => 'SupplierPriceImport',
+			'prefix' => img_picto('', 'supplier_proposal', 'class="pictofixedwidth valignmiddle paddingright"'),
+			'mainmenu' => 'constructioncosts',
+			'leftmenu' => 'supplierpriceimport',
+			'url' => '/constructioncosts/constructioncostsindex.php?mode=supplierprices',
+			'langs' => 'constructioncosts@constructioncosts',
+			'position' => 1000 + $r,
+			'enabled' => "isModEnabled('constructioncosts')",
+			'perms' => '$user->hasRight("constructioncosts", "import", "execute")',
+			'target' => '',
+			'user' => 2,
+		);
+
+		$this->menu[$r++] = array(
+			'fk_menu' => 'fk_mainmenu=constructioncosts',
+			'type' => 'left',
+			'titre' => 'ConvertOfferToInvoice',
+			'prefix' => img_picto('', 'bill', 'class="pictofixedwidth valignmiddle paddingright"'),
+			'mainmenu' => 'constructioncosts',
+			'leftmenu' => 'offerconvert',
+			'url' => '/constructioncosts/constructioncostsindex.php?mode=offerconvert',
+			'langs' => 'constructioncosts@constructioncosts',
+			'position' => 1000 + $r,
+			'enabled' => "isModEnabled('constructioncosts')",
+			'perms' => '$user->hasRight("constructioncosts", "offerconvert", "execute")',
 			'target' => '',
 			'user' => 2,
 		);

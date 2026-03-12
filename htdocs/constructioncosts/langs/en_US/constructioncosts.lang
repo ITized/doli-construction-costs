@@ -131,10 +131,114 @@ MatchFieldRef = Product Reference
 LastSyncDate = Last Synchronization
 
 #
+# Work Templates
+#
+WorkTemplates = Work Templates
+WorkTemplateList = Work Template List
+NewWorkTemplate = New Work Template
+WorkTemplateRef = Template Reference
+WorkTemplateLabel = Template Name
+WorkTemplateDescription = Template Description
+WorkTemplateCategory = Construction Category
+WorkTemplatePricingMode = Pricing Mode
+WorkTemplatePricingDetailed = Detailed (line by line)
+WorkTemplatePricingForfait = Lump Sum (forfait)
+WorkTemplateMargin = Default Margin (%%)
+WorkTemplateVATRate = Default VAT Rate (%%)
+WorkTemplateStatus = Status
+WorkTemplateStatusDraft = Draft
+WorkTemplateStatusActive = Active
+WorkTemplateSteps = Template Steps
+WorkTemplateStepType = Step Type
+WorkTemplateStepTypeProduct = Product
+WorkTemplateStepTypeService = Service
+WorkTemplateStepQtyFormula = Quantity Formula
+WorkTemplateStepQtyFormulaHelp = Expression using variables: {area}, {perimeter}, {length}, {width}, {height}, {units}, {rooms}, {layers}
+WorkTemplateStepUnitPrice = Unit Price HT
+WorkTemplateStepMORate = MO Hourly Rate
+WorkTemplateStepMOHours = MO Hours per Unit
+WorkTemplateStepOptional = Optional Step
+WorkTemplateStepPrompt = User Prompt
+WorkTemplateStepDefaultAnswer = Default Answer
+WorkTemplateStepCategory = Step Category
+WorkTemplateCategoryProtection = Worksite Protection
+WorkTemplateCategoryRemoval = Removal / Demolition
+WorkTemplateCategoryPreparation = Surface Preparation
+WorkTemplateCategoryApplication = Application
+WorkTemplateCategoryFinishing = Finishing
+WorkTemplateCategoryWaste = Waste Disposal
+GenerateOffer = Generate Offer
+GenerateOfferFrom = Generate Offer from Template
+WorkTemplateInputParams = Work Parameters
+WorkTemplateInputArea = Surface Area (m²)
+WorkTemplateInputPerimeter = Perimeter (ml)
+WorkTemplateInputHeight = Height (m)
+WorkTemplateInputLayers = Number of Layers
+WorkTemplateInputRooms = Number of Rooms
+WorkTemplatePromptQuestions = Configuration Questions
+GeneratedLines = Generated Lines
+TotalEstimate = Total Estimate HT
+GenerateDetailed = Generate Detailed Lines
+GenerateForfait = Generate Lump Sum
+
+#
+# Supplier Price Import
+#
+SupplierPriceImport = Supplier Price Import
+ImportFromCSV = Import from CSV File
+ImportFromURL = Import from URL
+ImportManualEntry = Manual Price Entry
+SupplierPriceImportSource = Import Source
+SupplierPriceImportCSVDesc = Upload a CSV file with columns: ref (or ean), price_ht, supplier_ref
+SupplierPriceImportURLDesc = Fetch supplier prices from a URL (CSV or JSON format)
+SupplierPriceImportManualDesc = Enter or update prices manually with last-known-value presets
+LastKnownPrice = Last Known Price
+LastPriceDate = Last Price Date
+NewPrice = New Price HT
+PriceSource = Price Source
+PriceSourceCSV = CSV File
+PriceSourceURL = URL Fetch
+PriceSourceManual = Manual Entry
+PriceComparison = Supplier Price Comparison
+CheapestSupplier = Cheapest Supplier
+PriceDifference = Price Difference
+SavePriceCache = Save Price Cache
+LoadPriceCache = Load Price Cache
+
+#
+# Offer to Invoice Conversion
+#
+ConvertOfferToInvoice = Convert Offer to Invoice
+OfferConversion = Offer Conversion
+OfferConversionDesc = Convert a proposal into an invoice preserving all construction cost details
+CostSummary = Cost Summary
+TotalMaterials = Total Materials HT
+TotalLabor = Total Labor HT
+MaterialPercent = Materials (%%)
+LaborPercent = Labor (%%)
+InvoiceMetadata = Invoice Metadata
+OriginalTemplate = Original Work Template
+OriginalProposal = Source Proposal
+OriginalParameters = Original Parameters
+ConversionDate = Conversion Date
+PreservedMetadata = All construction cost data is preserved on the invoice for traceability
+
+#
 # Errors / Messages
 #
 ErrorInvalidRuleType = Invalid pricing rule type
 ErrorNegativePrice = Price cannot be negative
 ErrorRequiredField = Field %s is required
+ErrorNoLinesToConvert = No lines to convert to invoice
+ErrorInvalidQuantity = Quantity must be positive
+ErrorMissingUnitPrice = Unit price HT is required
+ErrorInvalidFormula = Invalid quantity formula expression
+ErrorFileNotFound = File not found
+ErrorInvalidURL = Invalid URL
+ErrorFetchFailed = Failed to fetch data from URL
+ErrorInvalidJSON = Invalid JSON format
 SuccessRuleCreated = Pricing rule created successfully
 SuccessDataImported = Data imported successfully
+SuccessOfferConverted = Offer successfully converted to invoice
+SuccessPricesImported = %s supplier prices imported successfully
+SuccessTemplateCreated = Work template created successfully

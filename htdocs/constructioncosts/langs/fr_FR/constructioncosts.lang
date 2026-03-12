@@ -131,10 +131,114 @@ MatchFieldRef = Référence Produit
 LastSyncDate = Dernière Synchronisation
 
 #
+# Modèles de Travaux
+#
+WorkTemplates = Modèles de Travaux
+WorkTemplateList = Liste des Modèles de Travaux
+NewWorkTemplate = Nouveau Modèle de Travaux
+WorkTemplateRef = Référence Modèle
+WorkTemplateLabel = Nom du Modèle
+WorkTemplateDescription = Description du Modèle
+WorkTemplateCategory = Catégorie Construction
+WorkTemplatePricingMode = Mode de Tarification
+WorkTemplatePricingDetailed = Détaillé (ligne par ligne)
+WorkTemplatePricingForfait = Forfait (prix global)
+WorkTemplateMargin = Marge par défaut (%%)
+WorkTemplateVATRate = Taux TVA par défaut (%%)
+WorkTemplateStatus = Statut
+WorkTemplateStatusDraft = Brouillon
+WorkTemplateStatusActive = Actif
+WorkTemplateSteps = Étapes du Modèle
+WorkTemplateStepType = Type d'Étape
+WorkTemplateStepTypeProduct = Fourniture
+WorkTemplateStepTypeService = Main d'Œuvre
+WorkTemplateStepQtyFormula = Formule de Quantité
+WorkTemplateStepQtyFormulaHelp = Expression avec variables : {area}, {perimeter}, {length}, {width}, {height}, {units}, {rooms}, {layers}
+WorkTemplateStepUnitPrice = Prix Unitaire HT
+WorkTemplateStepMORate = Taux Horaire MO
+WorkTemplateStepMOHours = Heures MO par Unité
+WorkTemplateStepOptional = Étape Optionnelle
+WorkTemplateStepPrompt = Question Utilisateur
+WorkTemplateStepDefaultAnswer = Réponse par Défaut
+WorkTemplateStepCategory = Catégorie d'Étape
+WorkTemplateCategoryProtection = Protection de Chantier
+WorkTemplateCategoryRemoval = Dépose / Démolition
+WorkTemplateCategoryPreparation = Préparation des Supports
+WorkTemplateCategoryApplication = Application
+WorkTemplateCategoryFinishing = Finition
+WorkTemplateCategoryWaste = Gestion des Déchets
+GenerateOffer = Générer un Devis
+GenerateOfferFrom = Générer un Devis depuis le Modèle
+WorkTemplateInputParams = Paramètres du Chantier
+WorkTemplateInputArea = Surface (m²)
+WorkTemplateInputPerimeter = Périmètre (ml)
+WorkTemplateInputHeight = Hauteur (m)
+WorkTemplateInputLayers = Nombre de Couches
+WorkTemplateInputRooms = Nombre de Pièces
+WorkTemplatePromptQuestions = Questions de Configuration
+GeneratedLines = Lignes Générées
+TotalEstimate = Estimation Totale HT
+GenerateDetailed = Générer les Lignes Détaillées
+GenerateForfait = Générer le Forfait
+
+#
+# Import Prix Fournisseurs
+#
+SupplierPriceImport = Import Prix Fournisseurs
+ImportFromCSV = Importer depuis un Fichier CSV
+ImportFromURL = Importer depuis une URL
+ImportManualEntry = Saisie Manuelle des Prix
+SupplierPriceImportSource = Source d'Import
+SupplierPriceImportCSVDesc = Charger un fichier CSV avec les colonnes : ref (ou ean), price_ht, supplier_ref
+SupplierPriceImportURLDesc = Récupérer les prix fournisseurs depuis une URL (format CSV ou JSON)
+SupplierPriceImportManualDesc = Saisir ou mettre à jour les prix manuellement avec les dernières valeurs connues
+LastKnownPrice = Dernier Prix Connu
+LastPriceDate = Date du Dernier Prix
+NewPrice = Nouveau Prix HT
+PriceSource = Source du Prix
+PriceSourceCSV = Fichier CSV
+PriceSourceURL = Téléchargement URL
+PriceSourceManual = Saisie Manuelle
+PriceComparison = Comparaison des Prix Fournisseurs
+CheapestSupplier = Fournisseur le Moins Cher
+PriceDifference = Différence de Prix
+SavePriceCache = Enregistrer le Cache des Prix
+LoadPriceCache = Charger le Cache des Prix
+
+#
+# Conversion Devis en Facture
+#
+ConvertOfferToInvoice = Convertir le Devis en Facture
+OfferConversion = Conversion de Devis
+OfferConversionDesc = Convertir un devis en facture en préservant tous les détails des coûts de construction
+CostSummary = Résumé des Coûts
+TotalMaterials = Total Fournitures HT
+TotalLabor = Total Main d'Œuvre HT
+MaterialPercent = Fournitures (%%)
+LaborPercent = Main d'Œuvre (%%)
+InvoiceMetadata = Métadonnées de la Facture
+OriginalTemplate = Modèle de Travaux d'Origine
+OriginalProposal = Devis Source
+OriginalParameters = Paramètres d'Origine
+ConversionDate = Date de Conversion
+PreservedMetadata = Toutes les données de coûts de construction sont préservées sur la facture pour la traçabilité
+
+#
 # Erreurs / Messages
 #
 ErrorInvalidRuleType = Type de règle de tarification invalide
 ErrorNegativePrice = Le prix ne peut pas être négatif
 ErrorRequiredField = Le champ %s est obligatoire
+ErrorNoLinesToConvert = Aucune ligne à convertir en facture
+ErrorInvalidQuantity = La quantité doit être positive
+ErrorMissingUnitPrice = Le prix unitaire HT est obligatoire
+ErrorInvalidFormula = Expression de formule de quantité invalide
+ErrorFileNotFound = Fichier non trouvé
+ErrorInvalidURL = URL invalide
+ErrorFetchFailed = Échec de la récupération des données depuis l'URL
+ErrorInvalidJSON = Format JSON invalide
 SuccessRuleCreated = Règle de tarification créée avec succès
 SuccessDataImported = Données importées avec succès
+SuccessOfferConverted = Devis converti en facture avec succès
+SuccessPricesImported = %s prix fournisseurs importés avec succès
+SuccessTemplateCreated = Modèle de travaux créé avec succès
