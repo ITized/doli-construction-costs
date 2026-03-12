@@ -1,0 +1,26 @@
+ref;label;description;category;type;price_ht;vat_rate;unit;ean;supplier;supplier_ref;supplier_price
+CIM-PORT-35;Ciment Portland CEM I 52.5;Ciment Portland haute résistance sac 35kg;GROS_OEUVRE;product;8.50;20.0;U;3700200100015;Leroy Merlin;LM-CIM-001;7.90
+SAB-RHIN-1T;Sable du Rhin 0/4;Sable alluvionnaire granulométrie 0/4mm - 1 tonne;GROS_OEUVRE;product;45.00;20.0;T;3700200100022;Point P;PP-SAB-001;42.00
+GRA-CONC-1T;Gravier concassé 6/10;Gravier concassé calcaire 6/10mm - 1 tonne;GROS_OEUVRE;product;38.00;20.0;T;3700200100039;Point P;PP-GRA-001;35.50
+BET-C25-M3;Béton C25/30 prêt à l'emploi;Béton prêt à l'emploi classe C25/30 - 1m³;GROS_OEUVRE;product;95.00;20.0;M3;;Cemex;CX-BET-001;90.00
+PARPA-20;Parpaing creux 20x20x50;Bloc béton creux 20x20x50cm;MACONNERIE;product;1.35;20.0;U;3700200100046;Leroy Merlin;LM-PAR-001;1.20
+BRIQ-PLAT;Brique plâtrière 5x20x40;Brique plâtrière standard;MACONNERIE;product;0.85;20.0;U;3700200100053;Point P;PP-BRI-001;0.78
+ACIER-HA10;Acier HA10 barre 6m;Acier haute adhérence diamètre 10mm barre 6m;GROS_OEUVRE;product;8.20;20.0;ML;3700200100060;Descours & Cabaud;DC-ACI-001;7.50
+TREIL-ST25;Treillis soudé ST25;Panneau de treillis soudé ST25 2.4x6m;GROS_OEUVRE;product;42.00;20.0;U;3700200100077;Point P;PP-TRE-001;39.00
+PLAQ-BA13;Plaque de plâtre BA13;Plaque de plâtre standard BA13 2500x1200mm;SECOND_OEUVRE;product;5.80;20.0;U;3700200100084;Leroy Merlin;LM-PLA-001;5.20
+RAIL-48;Rail placo R48;Rail métallique pour plaque de plâtre 48mm 3m;SECOND_OEUVRE;product;2.90;20.0;ML;3700200100091;Leroy Merlin;LM-RAI-001;2.60
+MONT-48;Montant placo M48;Montant métallique pour cloison 48mm 3m;SECOND_OEUVRE;product;3.20;20.0;ML;3700200100107;Leroy Merlin;LM-MON-001;2.85
+LAIN-MIN-100;Laine minérale 100mm;Rouleau laine de verre 100mm R=2.50 - 1m²;ISOLATION;product;6.50;20.0;M2;3700200100114;Leroy Merlin;LM-ISO-001;5.90
+PSE-TH38-100;Polystyrène TH38 100mm;Panneau polystyrène expansé TH38 100mm - 1m²;ISOLATION;product;8.00;20.0;M2;3700200100121;Point P;PP-ISO-001;7.40
+TUIL-TERRE;Tuile terre cuite;Tuile de couverture terre cuite standard;TOITURE;product;1.20;20.0;U;3700200100138;Point P;PP-TUI-001;1.05
+BARD-ACIER;Bardeau bitumé;Bardeau bitumé shingle - paquet 3m²;TOITURE;product;18.50;20.0;U;3700200100145;Leroy Merlin;LM-BAR-001;16.80
+FIL-ELEC-15;Fil électrique H07VU 1.5mm²;Fil rigide H07VU 1.5mm² 100m;ELECTRICITE;product;22.00;20.0;U;3700200100152;Leroy Merlin;LM-FIL-001;19.50
+PRISE-2P;Prise 2P+T encastrable;Prise de courant 2P+T 16A encastrable;ELECTRICITE;product;3.50;20.0;U;3700200100169;Leroy Merlin;LM-PRI-001;3.10
+INTER-VA;Interrupteur va-et-vient;Interrupteur va-et-vient encastrable;ELECTRICITE;product;4.20;20.0;U;3700200100176;Leroy Merlin;LM-INT-001;3.80
+TUBE-CUI-14;Tube cuivre 14/16;Tube cuivre 14/16mm barre 4m;PLOMBERIE;product;28.00;20.0;ML;3700200100183;Point P;PP-TUB-001;25.50
+TUBE-PER-16;Tube PER 16mm;Tube PER 16mm couronne 100m;PLOMBERIE;product;65.00;20.0;U;3700200100190;Leroy Merlin;LM-PER-001;59.00
+CARR-GRES-30;Carrelage grès cérame 30x30;Carrelage grès cérame 30x30cm - 1m²;CARRELAGE;product;15.00;20.0;M2;3700200100206;Leroy Merlin;LM-CAR-001;13.50
+PEINT-ACR-10;Peinture acrylique 10L;Peinture acrylique blanche mate 10L;PEINTURE;product;35.00;20.0;U;3700200100213;Leroy Merlin;LM-PEI-001;32.00
+ENDUIT-FAC-25;Enduit de façade 25kg;Enduit monocouche façade sac 25kg;PEINTURE;product;12.50;20.0;U;3700200100220;Point P;PP-END-001;11.20
+PORTE-INT;Porte intérieure postformée;Porte intérieure postformée 204x83cm;MENUISERIE;product;45.00;20.0;U;3700200100237;Leroy Merlin;LM-POR-001;42.00
+FEN-PVC-120;Fenêtre PVC 120x120;Fenêtre PVC double vitrage 120x120cm;MENUISERIE;product;180.00;20.0;U;3700200100244;Leroy Merlin;LM-FEN-001;165.00
