@@ -50,3 +50,65 @@ function constructioncostsAdminPrepareHead()
 
 	return $head;
 }
+
+/**
+ * Prepare front-facing pages header (tab navigation for the module index)
+ *
+ * @return array<array{string,string,string}>
+ */
+function constructioncostsPrepareHead()
+{
+	global $langs, $conf, $user;
+
+	$langs->load("constructioncosts@constructioncosts");
+
+	$h = 0;
+	$head = array();
+
+	$head[$h][0] = dol_buildpath("/constructioncosts/constructioncostsindex.php", 1);
+	$head[$h][1] = $langs->trans("ConstructionCostsDashboard");
+	$head[$h][2] = 'dashboard';
+	$h++;
+
+	if ($user->hasRight('constructioncosts', 'pricingrule', 'read')) {
+		$head[$h][0] = dol_buildpath("/constructioncosts/constructioncostsindex.php", 1).'?mode=pricingrules';
+		$head[$h][1] = $langs->trans("PricingRules");
+		$head[$h][2] = 'pricingrules';
+		$h++;
+	}
+
+	if ($user->hasRight('constructioncosts', 'worktemplate', 'read')) {
+		$head[$h][0] = dol_buildpath("/constructioncosts/constructioncostsindex.php", 1).'?mode=worktemplates';
+		$head[$h][1] = $langs->trans("WorkTemplates");
+		$head[$h][2] = 'worktemplates';
+		$h++;
+	}
+
+	if ($user->hasRight('constructioncosts', 'supplierconfig', 'read')) {
+		$head[$h][0] = dol_buildpath("/constructioncosts/constructioncostsindex.php", 1).'?mode=suppliers';
+		$head[$h][1] = $langs->trans("SupplierConfigs");
+		$head[$h][2] = 'suppliers';
+		$h++;
+	}
+
+	if ($user->hasRight('constructioncosts', 'import', 'execute')) {
+		$head[$h][0] = dol_buildpath("/constructioncosts/constructioncostsindex.php", 1).'?mode=import';
+		$head[$h][1] = $langs->trans("ImportData");
+		$head[$h][2] = 'import';
+		$h++;
+
+		$head[$h][0] = dol_buildpath("/constructioncosts/constructioncostsindex.php", 1).'?mode=supplierprices';
+		$head[$h][1] = $langs->trans("SupplierPriceImport");
+		$head[$h][2] = 'supplierprices';
+		$h++;
+	}
+
+	if ($user->hasRight('constructioncosts', 'offerconvert', 'execute')) {
+		$head[$h][0] = dol_buildpath("/constructioncosts/constructioncostsindex.php", 1).'?mode=offerconvert';
+		$head[$h][1] = $langs->trans("ConvertOfferToInvoice");
+		$head[$h][2] = 'offerconvert';
+		$h++;
+	}
+
+	return $head;
+}

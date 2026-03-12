@@ -318,7 +318,7 @@ class modConstructionCosts extends DolibarrModules
 			'prefix' => img_picto('', $this->picto, 'class="pictofixedwidth valignmiddle paddingright"'),
 			'mainmenu' => 'constructioncosts',
 			'leftmenu' => 'pricingrule',
-			'url' => '/constructioncosts/constructioncostsindex.php',
+			'url' => '/constructioncosts/constructioncostsindex.php?mode=pricingrules',
 			'langs' => 'constructioncosts@constructioncosts',
 			'position' => 1000 + $r,
 			'enabled' => "isModEnabled('constructioncosts')",
