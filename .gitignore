@@ -1,0 +1,31 @@
+# Generated binaries
+/build/*.zip
+/bin/*.zip
+/bin
+# Doxygen generated documentation
+/build/doxygen/doxygen_warnings.log
+/doc/code/doxygen
+# Composer managed dependencies
+/vendor
+/dev/bin
+# PHPdocumentor generated files
+/build/phpdoc
+/doc/code/phpdoc
+# Sphinx generated files
+/doc/user/build
+/.settings/
+/.buildpath
+/.project
+# Other
+*.back
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+# OS
+.DS_Store
+Thumbs.db
+# PHPUnit
+.phpunit.result.cache

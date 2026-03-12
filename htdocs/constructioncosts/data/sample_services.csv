@@ -1,0 +1,21 @@
+ref;label;description;category;type;price_ht;vat_rate;unit;mo_hours;mo_hourly_rate
+SRV-MAC-MUR;Maçonnerie mur parpaing;Construction mur en parpaings au m² (fourniture et pose);MACONNERIE;service;0;20.0;M2;1.5;45.00
+SRV-MAC-ENDUIT;Enduit façade;Application enduit monocouche façade au m²;MACONNERIE;service;0;20.0;M2;0.8;45.00
+SRV-PLAC-CLOI;Cloison placo BA13;Pose cloison plaque de plâtre BA13 sur ossature au m²;SECOND_OEUVRE;service;0;20.0;M2;0.6;45.00
+SRV-PLAC-PLAF;Faux plafond BA13;Pose faux plafond plaque de plâtre BA13 au m²;SECOND_OEUVRE;service;0;20.0;M2;0.8;45.00
+SRV-ELEC-PT;Point électrique;Création d'un point électrique (prise ou interrupteur);ELECTRICITE;service;0;20.0;U;0.75;50.00
+SRV-ELEC-TAB;Tableau électrique;Pose et raccordement tableau électrique;ELECTRICITE;service;0;20.0;U;4.0;50.00
+SRV-PLOMB-PT;Point d'eau;Création d'un point d'eau (alimentation + évacuation);PLOMBERIE;service;0;20.0;U;2.0;50.00
+SRV-PLOMB-BAL;Installation ballon ECS;Pose et raccordement ballon d'eau chaude sanitaire;PLOMBERIE;service;0;20.0;U;3.0;50.00
+SRV-CARR-POSE;Pose carrelage sol;Pose carrelage sol au m² (colle incluse);CARRELAGE;service;0;20.0;M2;0.9;45.00
+SRV-CARR-FAIS;Pose faïence murale;Pose faïence murale au m² (colle incluse);CARRELAGE;service;0;20.0;M2;1.0;45.00
+SRV-PEINT-MUR;Peinture murale;Application peinture 2 couches sur mur au m²;PEINTURE;service;0;10.0;M2;0.3;42.00
+SRV-PEINT-PLAF;Peinture plafond;Application peinture 2 couches sur plafond au m²;PEINTURE;service;0;10.0;M2;0.4;42.00
+SRV-ISOL-INT;Isolation intérieure;Pose isolation thermique par l'intérieur au m²;ISOLATION;service;0;5.5;M2;0.5;45.00
+SRV-ISOL-COM;Isolation combles;Soufflage laine minérale en combles perdus au m²;ISOLATION;service;0;5.5;M2;0.15;45.00
+SRV-COUV-TUIL;Couverture tuiles;Pose couverture en tuiles terre cuite au m²;TOITURE;service;0;20.0;M2;0.8;48.00
+SRV-MENU-PORTE;Pose porte intérieure;Pose porte intérieure avec huisserie;MENUISERIE;service;0;20.0;U;1.5;45.00
+SRV-MENU-FEN;Pose fenêtre PVC;Dépose et pose fenêtre PVC double vitrage;MENUISERIE;service;0;20.0;U;2.0;48.00
+SRV-TERR-FOUIL;Terrassement fouille;Terrassement en fouille au m³;TERRASSEMENT;service;0;20.0;M3;0.5;40.00
+SRV-TERR-REMB;Remblaiement;Remblaiement et compactage au m³;TERRASSEMENT;service;0;20.0;M3;0.3;40.00
+SRV-CHARP-TRAD;Charpente traditionnelle;Fourniture et pose charpente traditionnelle au m²;CHARPENTE;service;0;20.0;M2;2.0;52.00

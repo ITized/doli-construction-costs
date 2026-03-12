@@ -1,0 +1,244 @@
+# Module ConstructionCosts - Fichier de langue française
+
+#
+# Générique
+#
+ModuleConstructionCostsName = Coûts Construction
+ModuleConstructionCostsDesc = Gestion complète des produits, services et nomenclatures (BOM) pour le secteur de la construction avec tarification configurable
+
+#
+# Description du module
+#
+ConstructionCostsDescription = Gestion des prix et nomenclatures du secteur construction
+ConstructionCostsDescriptionLong = Un module complet pour la gestion des produits, services et nomenclatures (BOM) du secteur de la construction avec des règles de tarification configurables, la gestion des marges, le support multi-fournisseurs et les capacités d'import/export CSV.
+
+#
+# Page d'administration
+#
+ConstructionCostsSetup = Configuration Coûts Construction
+ConstructionCostsSetupPage = Configurez les paramètres du module Coûts Construction ci-dessous. Ces valeurs servent de valeurs par défaut pour les calculs de prix dans tout le module.
+ConstructionCostsAboutDescription = Un module Dolibarr pour le secteur français de la construction fournissant une gestion complète des prix, des nomenclatures et l'intégration des fournisseurs.
+
+#
+# Section Tarification
+#
+PricingSection = Configuration des Prix
+CONSTRUCTIONCOSTS_MO_HOURLY_RATE = Taux Horaire MO (Main d'Oeuvre)
+CONSTRUCTIONCOSTS_MO_HOURLY_RATETooltip = Taux horaire par défaut pour la main d'oeuvre en EUR. Utilisé quand aucun taux spécifique n'est défini sur une règle de prix.
+MOHourlyRateHelp = Taux horaire de main d'oeuvre par défaut appliqué aux prix des services. Peut être surchargé par règle de prix.
+CONSTRUCTIONCOSTS_DEFAULT_MARGIN_PERCENT = Marge par Défaut (%%)
+CONSTRUCTIONCOSTS_DEFAULT_MARGIN_PERCENTTooltip = Pourcentage de marge par défaut appliqué à tous les calculs de prix
+DefaultMarginPercentHelp = Le pourcentage de marge par défaut ajouté au prix de revient pour déterminer le prix de vente.
+CONSTRUCTIONCOSTS_SERVICE_BASE_MULTIPLIER = Multiplicateur de Base Services
+CONSTRUCTIONCOSTS_SERVICE_BASE_MULTIPLIERTooltip = Multiplicateur de base appliqué aux calculs de prix des services
+ServiceBaseMultiplierHelp = Un multiplicateur appliqué à tous les prix de services. Utilisez 1.0 pour aucune modification.
+CONSTRUCTIONCOSTS_DEFAULT_VAT_RATE = Taux de TVA par Défaut (%%)
+CONSTRUCTIONCOSTS_DEFAULT_VAT_RATETooltip = Taux de TVA par défaut pour les produits et services de construction
+DefaultVATRateHelp = Le taux de TVA par défaut. Taux normal français : 20%%. Taux réduits : 10%% (rénovation), 5,5%% (amélioration énergétique).
+CONSTRUCTIONCOSTS_DEFAULT_CURRENCY = Devise par Défaut
+CONSTRUCTIONCOSTS_DEFAULT_CURRENCYTooltip = Devise par défaut pour toutes les données de prix
+
+#
+# Section Import/Export
+#
+ImportExportSection = Configuration Import / Export
+CONSTRUCTIONCOSTS_CSV_SEPARATOR = Séparateur CSV
+CONSTRUCTIONCOSTS_CSV_SEPARATORTooltip = Caractère séparateur de champs utilisé dans les fichiers CSV d'import/export
+Semicolon = Point-virgule
+Comma = Virgule
+Tab = Tabulation
+Pipe = Barre verticale
+
+#
+# Section Intégration Fournisseurs
+#
+SupplierIntegrationSection = Intégration Fournisseurs
+CONSTRUCTIONCOSTS_ENABLE_SUPPLIER_SYNC = Activer la Synchronisation des Prix Fournisseurs
+CONSTRUCTIONCOSTS_ENABLE_SUPPLIER_SYNCTooltip = Activer la synchronisation automatique des prix depuis les fournisseurs configurés
+
+#
+# Entrées de menu
+#
+PricingRules = Règles de Tarification
+SupplierConfigs = Configurations Fournisseurs
+ImportData = Importer des Données
+ViewConstructionCosts = Voir les Coûts Construction
+
+#
+# Types de règles de prix
+#
+PricingRuleTypeProduct = Produit
+PricingRuleTypeService = Service
+PricingRuleTypeMixed = Mixte (Produit + Service)
+
+#
+# Catégories de construction
+#
+ConstructionCategory = Catégorie Construction
+ConstructionUnit = Unité de Mesure Construction
+ConstructionCategoryCodeHelp = Code unique pour la catégorie de construction
+ConstructionCategoryLabelHelp = Nom d'affichage de la catégorie de construction
+ConstructionUnitCodeHelp = Code unique pour l'unité de mesure
+ConstructionUnitLabelHelp = Nom d'affichage de l'unité de mesure
+
+#
+# Tableau de bord / Index
+#
+ConstructionCostsArea = Tableau de Bord Coûts Construction
+ConstructionCostsDashboard = Tableau de Bord
+PricingRulesOverview = Aperçu des Règles de Tarification
+RecentPricingRules = Règles de Tarification Récentes
+QuickActions = Actions Rapides
+NoPricingRulesYet = Aucune règle de tarification définie. Commencez par importer des données ou créer des règles manuellement.
+
+#
+# Détail des prix
+#
+MaterialCost = Coût Matériaux
+LaborCost = Coût Main d'Oeuvre (MO)
+Subtotal = Sous-total
+MarginPercent = Marge (%%)
+MarginAmount = Montant de la Marge
+PriceHT = Prix HT
+VATRate = Taux TVA (%%)
+VATAmount = Montant TVA
+PriceTTC = Prix TTC
+
+#
+# Import
+#
+ImportCSVTitle = Importer des Données Construction depuis CSV
+ImportCSVDescription = Téléchargez un fichier CSV contenant les données des produits et services de construction. Le fichier doit suivre le format de modèle standard.
+DownloadCSVTemplate = Télécharger le Modèle CSV
+ImportResults = Résultats de l'Import
+ImportTotalRows = Lignes traitées au total
+ImportCreated = Produits/Services créés
+ImportUpdated = Produits/Services mis à jour
+ImportSkipped = Lignes ignorées
+ImportErrors = Erreurs
+
+#
+# Fournisseur
+#
+SyncSupplierPrices = Synchroniser les Prix Fournisseurs
+SupplierName = Nom du Fournisseur
+SupplierType = Type d'Intégration
+SupplierTypeCSV = Import CSV
+SupplierTypeAPI = Intégration API
+MatchField = Champ de Correspondance Produit
+MatchFieldEAN = EAN / Code-barres
+MatchFieldRef = Référence Produit
+LastSyncDate = Dernière Synchronisation
+
+#
+# Modèles de Travaux
+#
+WorkTemplates = Modèles de Travaux
+WorkTemplateList = Liste des Modèles de Travaux
+NewWorkTemplate = Nouveau Modèle de Travaux
+WorkTemplateRef = Référence Modèle
+WorkTemplateLabel = Nom du Modèle
+WorkTemplateDescription = Description du Modèle
+WorkTemplateCategory = Catégorie Construction
+WorkTemplatePricingMode = Mode de Tarification
+WorkTemplatePricingDetailed = Détaillé (ligne par ligne)
+WorkTemplatePricingForfait = Forfait (prix global)
+WorkTemplateMargin = Marge par défaut (%%)
+WorkTemplateVATRate = Taux TVA par défaut (%%)
+WorkTemplateStatus = Statut
+WorkTemplateStatusDraft = Brouillon
+WorkTemplateStatusActive = Actif
+WorkTemplateSteps = Étapes du Modèle
+WorkTemplateStepType = Type d'Étape
+WorkTemplateStepTypeProduct = Fourniture
+WorkTemplateStepTypeService = Main d'Œuvre
+WorkTemplateStepQtyFormula = Formule de Quantité
+WorkTemplateStepQtyFormulaHelp = Expression avec variables : {area}, {perimeter}, {length}, {width}, {height}, {units}, {rooms}, {layers}
+WorkTemplateStepUnitPrice = Prix Unitaire HT
+WorkTemplateStepMORate = Taux Horaire MO
+WorkTemplateStepMOHours = Heures MO par Unité
+WorkTemplateStepOptional = Étape Optionnelle
+WorkTemplateStepPrompt = Question Utilisateur
+WorkTemplateStepDefaultAnswer = Réponse par Défaut
+WorkTemplateStepCategory = Catégorie d'Étape
+WorkTemplateCategoryProtection = Protection de Chantier
+WorkTemplateCategoryRemoval = Dépose / Démolition
+WorkTemplateCategoryPreparation = Préparation des Supports
+WorkTemplateCategoryApplication = Application
+WorkTemplateCategoryFinishing = Finition
+WorkTemplateCategoryWaste = Gestion des Déchets
+GenerateOffer = Générer un Devis
+GenerateOfferFrom = Générer un Devis depuis le Modèle
+WorkTemplateInputParams = Paramètres du Chantier
+WorkTemplateInputArea = Surface (m²)
+WorkTemplateInputPerimeter = Périmètre (ml)
+WorkTemplateInputHeight = Hauteur (m)
+WorkTemplateInputLayers = Nombre de Couches
+WorkTemplateInputRooms = Nombre de Pièces
+WorkTemplatePromptQuestions = Questions de Configuration
+GeneratedLines = Lignes Générées
+TotalEstimate = Estimation Totale HT
+GenerateDetailed = Générer les Lignes Détaillées
+GenerateForfait = Générer le Forfait
+
+#
+# Import Prix Fournisseurs
+#
+SupplierPriceImport = Import Prix Fournisseurs
+ImportFromCSV = Importer depuis un Fichier CSV
+ImportFromURL = Importer depuis une URL
+ImportManualEntry = Saisie Manuelle des Prix
+SupplierPriceImportSource = Source d'Import
+SupplierPriceImportCSVDesc = Charger un fichier CSV avec les colonnes : ref (ou ean), price_ht, supplier_ref
+SupplierPriceImportURLDesc = Récupérer les prix fournisseurs depuis une URL (format CSV ou JSON)
+SupplierPriceImportManualDesc = Saisir ou mettre à jour les prix manuellement avec les dernières valeurs connues
+LastKnownPrice = Dernier Prix Connu
+LastPriceDate = Date du Dernier Prix
+NewPrice = Nouveau Prix HT
+PriceSource = Source du Prix
+PriceSourceCSV = Fichier CSV
+PriceSourceURL = Téléchargement URL
+PriceSourceManual = Saisie Manuelle
+PriceComparison = Comparaison des Prix Fournisseurs
+CheapestSupplier = Fournisseur le Moins Cher
+PriceDifference = Différence de Prix
+SavePriceCache = Enregistrer le Cache des Prix
+LoadPriceCache = Charger le Cache des Prix
+
+#
+# Conversion Devis en Facture
+#
+ConvertOfferToInvoice = Convertir le Devis en Facture
+OfferConversion = Conversion de Devis
+OfferConversionDesc = Convertir un devis en facture en préservant tous les détails des coûts de construction
+CostSummary = Résumé des Coûts
+TotalMaterials = Total Fournitures HT
+TotalLabor = Total Main d'Œuvre HT
+MaterialPercent = Fournitures (%%)
+LaborPercent = Main d'Œuvre (%%)
+InvoiceMetadata = Métadonnées de la Facture
+OriginalTemplate = Modèle de Travaux d'Origine
+OriginalProposal = Devis Source
+OriginalParameters = Paramètres d'Origine
+ConversionDate = Date de Conversion
+PreservedMetadata = Toutes les données de coûts de construction sont préservées sur la facture pour la traçabilité
+
+#
+# Erreurs / Messages
+#
+ErrorInvalidRuleType = Type de règle de tarification invalide
+ErrorNegativePrice = Le prix ne peut pas être négatif
+ErrorRequiredField = Le champ %s est obligatoire
+ErrorNoLinesToConvert = Aucune ligne à convertir en facture
+ErrorInvalidQuantity = La quantité doit être positive
+ErrorMissingUnitPrice = Le prix unitaire HT est obligatoire
+ErrorInvalidFormula = Expression de formule de quantité invalide
+ErrorFileNotFound = Fichier non trouvé
+ErrorInvalidURL = URL invalide
+ErrorFetchFailed = Échec de la récupération des données depuis l'URL
+ErrorInvalidJSON = Format JSON invalide
+SuccessRuleCreated = Règle de tarification créée avec succès
+SuccessDataImported = Données importées avec succès
+SuccessOfferConverted = Devis converti en facture avec succès
+SuccessPricesImported = %s prix fournisseurs importés avec succès
+SuccessTemplateCreated = Modèle de travaux créé avec succès
